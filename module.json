@@ -6,6 +6,8 @@
    "version": "0.0.1",
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.7.10",
+   "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
+   "manifest": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/module.json",
    "packs": [
   		{	
       "name": "Journals",
@@ -15,4 +17,5 @@
  	}
 	]
 	}	
+ 
  
