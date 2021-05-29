@@ -5,7 +5,7 @@ Works with ** GGA **  System! It provides a full list os default skills and some
 <thead>
   <tr>
     <th><p align="center">
-    <img width="300" src="img/1.png">
+    <img width="600" src="img/1.png">
 </p></th>
  </thead>
  </table>
