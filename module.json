@@ -23,7 +23,7 @@
       "entity": "Item"
  	},
 	{	
-      "name": "GURPS4E-B-Body_Armor",
+      "name": "GURPS4E-B-Body-Armor",
       "label": "GURPS Body Armor",
       "path": "./packs/body-armor.db",
       "entity": "Item"
