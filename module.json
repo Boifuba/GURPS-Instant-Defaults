@@ -7,6 +7,15 @@
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.7.10",
    "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
+   "manifest": "{   
+   "name": "Gurps_Instant_Defaults",   
+   "title": "Gurps Instant Defaults",   
+   "description": "All skills with Defaults for GURPS",   
+   "author": "Boifuba, Pimpão & danielrab",
+   "version": "0.0.4",
+   "minimumCoreVersion": "0.7.9",
+   "compatibleCoreVersion":"0.7.10",
+   "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
    "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.json",
    "download": "https://github.com/cefasheli/Gurps_Instant_Defaults/archive/refs/heads/main.zip",
    "packs": [
@@ -29,5 +38,29 @@
       "entity": "Item"
  	}
 	],
+	}	
+
+",
+   "download": "https://github.com/cefasheli/Gurps_Instant_Defaults/archive/refs/heads/main.zip",
+   "packs": [
+  		{	
+      "name": "Defaults",
+      "label": "GURPS Skills",
+      "path": "./packs/gurps-instant-defaults.db",
+      "entity": "JournalEntry"
+ 	},
+	{	
+      "name": "GURPS4E_B_Ammunition",
+      "label": "GURPS Skills",
+      "path": "./packs/ammunition.db",
+      "entity": "Item"
+ 	},
+	{	
+      "name": "GURPS4E_B_Body_Armor",
+      "label": "GURPS Skills",
+      "path": "./packs/body-armor.db",
+      "entity": "Item"
+ 	}
+	]
 	}	
 
