@@ -24,7 +24,8 @@ Works with **GGA**  System! It provides a full list os default skills and some i
 https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.json
 
 
-*How to use it
+## Special Thanks 
+To Chris and Nick for effort to make it possble and danielrab with yout science rocket skills
 
 ___
 ## Legal
