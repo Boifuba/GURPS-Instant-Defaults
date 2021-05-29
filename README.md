@@ -2,7 +2,7 @@
 Works with **GGA**  System! It provides a full list os default skills and some itens to make your game more fast! 
 
 
-##Author
+## Authors
 
 * Boifubá
 * Pimpão
