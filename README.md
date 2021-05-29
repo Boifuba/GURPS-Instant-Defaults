@@ -45,7 +45,7 @@ Our community is awesome and invite you to join us on [discord](https://discord.
 <thead>
   <tr>
     <th><p align="center">
-    <img width="600" src="img/2.png">
+    <img width="150" src="img/2.png">
     <a href="https://discord.gg/H84jMwVH">Discord</a>
 </p></th>
  </thead>
