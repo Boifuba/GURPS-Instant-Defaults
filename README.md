@@ -39,7 +39,7 @@ This module DOES NOT provide information contained in paid publications. It is o
 
 ## Community
 
-Our community is awesome and invite you to join us on [discord](https://discord.gg/H84jMwVH)
+Our community is awesome and i would like to invite you to join us on [discord](https://discord.gg/H84jMwVH)
 
 <table>
 <thead>
