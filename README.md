@@ -1,5 +1,5 @@
 # GURPS Instant Defaults is a Module for Foundry VTT 
-Works with **GGA**  System! It provides a full list os default skills and some itens to make your game more fast! 
+Works with **GGA** System! It provides a full list of skill defaults and some items to make your game faster!
 
 
 ## Authors
@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.j
 
 
 ## Special Thanks 
-To Chris and Nick  for their efforts in making this possible and danielrab with yout science rocket skills
+To Chris and Nick for their efforts in making this possible and danielrab for his rocket science skills
 
 ___
 ## Legal
