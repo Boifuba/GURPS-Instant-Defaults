@@ -17,13 +17,13 @@
       "entity": "JournalEntry"
  	},
 	{	
-      "name": "GURPS4E_B_Ammunition",
+      "name": "GURPS4E-B-Ammunition",
       "label": "GURPS Ammunitions",
       "path": "./packs/ammunition.db",
       "entity": "Item"
  	},
 	{	
-      "name": "GURPS4E_B_Body_Armor",
+      "name": "GURPS4E-B-Body_Armor",
       "label": "GURPS Body Armor",
       "path": "./packs/body-armor.db",
       "entity": "Item"
