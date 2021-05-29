@@ -4,8 +4,8 @@ Works with **GGA**  System! It provides a full list os default skills and some i
 
 ##Author
 
-Boifubá
-Pimpão
+* Boifubá
+* Pimpão
 
 
 <table>
