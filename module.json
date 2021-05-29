@@ -12,7 +12,7 @@
    "title": "Gurps Instant Defaults",   
    "description": "All skills with Defaults for GURPS",   
    "author": "Boifuba, Pimpão & danielrab",
-   "version": "0.0.4",
+   "version": "0.0.5",
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.7.10",
    "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
@@ -27,13 +27,13 @@
  	},
 	{	
       "name": "GURPS4E_B_Ammunition",
-      "label": "GURPS Skills",
+      "label": "GURPS Ammunitions",
       "path": "./packs/ammunition.db",
       "entity": "Item"
  	},
 	{	
       "name": "GURPS4E_B_Body_Armor",
-      "label": "GURPS Skills",
+      "label": "GURPS Body Armor",
       "path": "./packs/body-armor.db",
       "entity": "Item"
  	}
