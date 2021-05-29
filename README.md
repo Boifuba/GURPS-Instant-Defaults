@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.j
 
 
 ## Special Thanks 
-To Chris and Nick for effort to make it possble and danielrab with yout science rocket skills
+To Chris and Nick  for their efforts in making this possible and danielrab with yout science rocket skills
 
 ___
 ## Legal
@@ -35,6 +35,11 @@ The material presented here is our original creation, offered trough On the fly 
 GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. 
 The GURPS Instant Defaults was released for free distribution, and not for resale, under the permissions granted in the Steve Jackson Games Online Policy
 This module DOES NOT provide information contained in paid publications. It is only intended to allow people to play GURPS online using their GURPS books/PDFs.
+
+
+## Community
+
+Our community is awesome and invite you to join us on [discord(https://discord.gg/H84jMwVH)
 
 
 
