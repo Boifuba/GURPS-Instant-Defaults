@@ -1,6 +1,13 @@
 # GURPS Instant Defaults is a Module for Foundry VTT 
 Works with **GGA**  System! It provides a full list os default skills and some itens to make your game more fast! 
 
+
+##Author
+
+Boifubá
+Pimpão
+
+
 <table>
 <thead>
   <tr>
@@ -13,14 +20,14 @@ Works with **GGA**  System! It provides a full list os default skills and some i
 
 
 
-# Manifest:
+## Manifest:
 https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.json
 
 
 *How to use it
 
 ___
-# Legal
+## Legal
 
 
 The material presented here is our original creation, offered trough On the fly formulas made by  [Gurps Game Aid](https://github.com/crnormand/gurps) and is  intended for use with the GURPS system from Steve Jackson Games. This material is not official and is not endorsed by [Steve Jackson Games.](http://www.sjgames.com/)
