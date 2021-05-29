@@ -37,30 +37,8 @@
       "path": "./packs/body-armor.db",
       "entity": "Item"
  	}
-	],
-	}	
-
-",
-   "download": "https://github.com/cefasheli/Gurps_Instant_Defaults/archive/refs/heads/main.zip",
-   "packs": [
-  		{	
-      "name": "Defaults",
-      "label": "GURPS Skills",
-      "path": "./packs/gurps-instant-defaults.db",
-      "entity": "JournalEntry"
- 	},
-	{	
-      "name": "GURPS4E_B_Ammunition",
-      "label": "GURPS Skills",
-      "path": "./packs/ammunition.db",
-      "entity": "Item"
- 	},
-	{	
-      "name": "GURPS4E_B_Body_Armor",
-      "label": "GURPS Skills",
-      "path": "./packs/body-armor.db",
-      "entity": "Item"
- 	}
 	]
 	}	
+
+
 
