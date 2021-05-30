@@ -1,5 +1,5 @@
 {   
-   "name": "Gurps Instant Defaults",   
+   "name": "Gurps-Instant-Defaults",   
    "title": "Gurps Instant Defaults",   
    "description": "All skills with Defaults for GURPS",   
    "author": "Boifuba, Pimpão & danielrab",
@@ -7,8 +7,8 @@
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.7.10",
    "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
-   "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.json",
-   "download": "https://github.com/cefasheli/Gurps_Instant_Defaults/archive/refs/heads/main.zip",
+   "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
+   "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
    "packs": [
   		{	
       "name": "Defaults",
