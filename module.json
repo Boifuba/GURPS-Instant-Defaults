@@ -1,5 +1,5 @@
 {   
-   "name": "Gurps_Instant_Defaults",   
+   "name": "Gurps Instant Defaults",   
    "title": "Gurps Instant Defaults",   
    "description": "All skills with Defaults for GURPS",   
    "author": "Boifuba, Pimpão & danielrab",
@@ -12,13 +12,13 @@
    "packs": [
   		{	
       "name": "Defaults",
-      "label": "GURPS4E Skills",
+      "label": "GURPS Basic Set Skills",
       "path": "./packs/gurps-instant-defaults.db",
       "entity": "JournalEntry"
  	},
 	{	
       "name": "GURPS4E-B-Ammunition",
-      "label": "GURPS Ammunitions",
+      "label": "GURPS Basic Set Ammunitions",
       "path": "./packs/ammunition.db",
       "entity": "Item"
  	},
@@ -30,13 +30,13 @@
  	},
 	{	
       "name": "GURPS4E-B-Medical-Gear",
-      "label": "GURPS Medical Gear",
+      "label": "GURPS Basic Set Medical Gear",
       "path": "./packs/gurps4e-medical-gear.db",
       "entity": "Item"
  	},
 	{	
       "name": "GURPS4E-B-Body-Armor",
-      "label": "GURPS Body Armor",
+      "label": "GURPS Basic Set Body Armor",
       "path": "./packs/body-armor.db",
       "entity": "Item"
  	},
