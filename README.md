@@ -21,7 +21,7 @@ Works with **GGA** System! It provides a full list of skill defaults and some it
 
 
 ## Manifest:
-https://raw.githubusercontent.com/cefasheli/Gurps_Instant_Defaults/main/module.json
+https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json
 
 
 ## Special Thanks 
