@@ -1,57 +1,56 @@
-{   
-   "name": "gurps-instant-defaults",   
-   "title": "Gurps Instant Defaults",   
-   "description": "All skills with Defaults for GURPS",   
-   "author": "Boifuba, Pimpão & danielrab",
-   "version": "0.0.10",
-   "minimumCoreVersion": "0.7.9",
-   "compatibleCoreVersion":"0.7.10",
-   "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
-   "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
-   "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
-   "packs": [
-  		{	
-      "name": "Defaults",
-      "label": "GURPS Basic Set Skills",
-      "path": "./packs/gurps-instant-defaults.db",
-      "entity": "JournalEntry"
- 	},
-	{	
-      "name": "GURPS4E-B-Ammunition",
-      "label": "GURPS Basic Set Ammunitions",
-      "path": "./packs/ammunition.db",
-      "entity": "Item"
- 	},
-	{	
-      "name": "GURPS4E-Macro",
-      "label": "GURPS Macros",
-      "path": "./packs/macros.db",
-      "entity": "Macro"
- 	},
-	{	
-      "name": "GURPS4E-B-Medical-Gear",
-      "label": "GURPS Basic Set Medical Gear",
-      "path": "./packs/gurps4e-medical-gear.db",
-      "entity": "Item"
- 	},
-	{	
-      "name": "GURPS4E-B-Body-Armor",
-      "label": "GURPS Basic Set Body Armor",
-      "path": "./packs/body-armor.db",
-      "entity": "Item"
- 	},
-	{	
-      "name": "GURPS4E-B-RollTables",
-      "label": "GURPS RollTables",
-      "path": "./packs/gurps-4e-rolltables.db",
-      "entity": "Item"
-},        
-{	
-      "name": "GURPS4E-B-Basic-Weapons",
-      "label": "GURPS Basic Set Weapons",
-      "path": "./packs/ggurps4e-basic-weapons.db",
-      "entity": "Item"
- 	}
-	]
-	}	
-
+{
+    "name": "gurps-instant-defaults",
+    "title": "Gurps Instant Defaults",
+    "description": "All skills with Defaults for GURPS",
+    "author": "Boifuba, Pimpão & danielrab",
+    "version": "0.0.10",
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "0.7.10",
+    "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
+    "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
+    "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
+    "packs": [
+        {
+            "name": "Defaults",
+            "label": "GURPS Basic Set Skills",
+            "path": "./packs/gurps-instant-defaults.db",
+            "entity": "JournalEntry"
+        },
+        {
+            "name": "GURPS4E-B-Ammunition",
+            "label": "GURPS Basic Set Ammunitions",
+            "path": "./packs/ammunition.db",
+            "entity": "Item"
+        },
+        {
+            "name": "GURPS4E-Macro",
+            "label": "GURPS Macros",
+            "path": "./packs/macros.db",
+            "entity": "Macro"
+        },
+        {
+            "name": "GURPS4E-B-Medical-Gear",
+            "label": "GURPS Basic Set Medical Gear",
+            "path": "./packs/gurps4e-medical-gear.db",
+            "entity": "Item"
+        },
+        {
+            "name": "GURPS4E-B-Body-Armor",
+            "label": "GURPS Basic Set Body Armor",
+            "path": "./packs/body-armor.db",
+            "entity": "Item"
+        },
+        {
+            "name": "GURPS4E-B-RollTables",
+            "label": "GURPS RollTables",
+            "path": "./packs/gurps-4e-rolltables.db",
+            "entity": "Item"
+        },
+        {
+            "name": "GURPS4E-B-Basic-Weapons",
+            "label": "GURPS Basic Set Weapons",
+            "path": "./packs/ggurps4e-basic-weapons.db",
+            "entity": "Item"
+        }
+    ]
+}
