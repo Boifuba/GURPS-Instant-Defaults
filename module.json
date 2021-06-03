@@ -45,7 +45,8 @@
       "label": "GURPS RollTables",
       "path": "./packs/gurps-4e-rolltables.db",
       "entity": "Item"
-        {	
+}        
+{	
       "name": "GURPS4E-B-Basic-Weapons",
       "label": "GURPS Basic Set Weapons",
       "path": "./packs/ggurps4e-basic-weapons.db",
