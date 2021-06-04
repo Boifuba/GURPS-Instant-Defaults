@@ -5,7 +5,7 @@
     "author": "Boifuba, Pimpão & danielrab",
     "version": "0.0.11",
     "minimumCoreVersion": "0.7.9",
-    "compatibleCoreVersion": "0.7.11",
+    "compatibleCoreVersion": "0.7.12",
     "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
     "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
     "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
