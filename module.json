@@ -1,98 +1,98 @@
 {
-    "name": "gurps-instant-defaults",
-    "title": "Gurps Instant Defaults",
-    "description": "All skills with Defaults for GURPS",
-    "author": "Boifuba, Pimpão & danielrab",
-    "version": "0.1.0",
-    "minimumCoreVersion": "0.7.9",
-    "compatibleCoreVersion": "0.8.6",
-    "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
-    "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
-    "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
-    "packs": [
-        {
-            "name": "Defaults",
-            "label": "GURPS Basic Set Skills",
-            "path": "./packs/gurps-instant-defaults.db",
-            "entity": "JournalEntry"
-        },
-        {
-            "name": "GURPS4E-Macro",
-            "label": "GURPS Macros",
-            "path": "./packs/macros.db",
-            "entity": "Macro"
-        },
-        {
-            "name": "GURPS4E-B-RollTables",
-            "label": "GURPS RollTables",
-            "path": "./packs/gurps-4e-rolltables.db",
-            "entity": "RollTable"
-        },
-        {
-            "name": "Basic-Set-Equipment",
-            "label": "GURPS Basic Set Weapons",
-            "path": "./packs/Basic-Set-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Dungeon-Fantasy-1-Equipment",
-            "label": "GURPS Dungeon Fantasy 1",
-            "path": "./packs/Dungeon-Fantasy-1-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Dungeon-Fantasy-8-Equipment",
-            "label": "GURPS Dungeon Fantasy 8",
-            "path": "./packs/Dungeon-Fantasy-8-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Dungeon-Fantasy-RPG-Equipment",
-            "label": "GURPS Dungeon Fantasy",
-            "path": "./packs/Dungeon-Fantasy-RPG-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "High-Tech-Equipment",
-            "label": "GURPS High-Tech",
-            "path": "./packs/High-Tech-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Low-Tech-Equipment",
-            "label": "GURPS Low-Tech",
-            "path": "./packs/Low-Tech-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Magic-Equipment",
-            "label": "GURPS Magic",
-            "path": "./packs/Magic-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Martial-Arts-Equipment",
-            "label": "GURPS Martial Arts",
-            "path": "./packs/Martial-Arts-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Mysteries-Equipment",
-            "label": "GURPS Mysteries",
-            "path": "./packs/Mysteries-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Tactical-Shooting-Equipment",
-            "label": "GURPS Tactical Shooting",
-            "path": "./packs/Tactical-Shooting-Equipment.db",
-            "entity": "Item"
-        },
-        {
-            "name": "Ultra-Tech-Equipment",
-            "label": "GURPS Ultra-Tech",
-            "path": "./packs/Ultra-Tech-Equipment.db",
-            "entity": "Item"
-        },
-    ]
+  "name": "gurps-instant-defaults",
+  "title": "Gurps Instant Defaults",
+  "description": "All skills with Defaults for GURPS",
+  "author": "Boifuba, Pimpão & danielrab",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.8.6",
+  "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
+  "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
+  "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
+  "packs": [
+    {
+      "name": "Defaults",
+      "label": "GURPS Basic Set Skills",
+      "path": "./packs/gurps-instant-defaults.db",
+      "entity": "JournalEntry"
+    },
+    {
+      "name": "GURPS4E-Macro",
+      "label": "GURPS Macros",
+      "path": "./packs/macros.db",
+      "entity": "Macro"
+    },
+    {
+      "name": "GURPS4E-B-RollTables",
+      "label": "GURPS RollTables",
+      "path": "./packs/gurps-4e-rolltables.db",
+      "entity": "RollTable"
+    },
+    {
+      "name": "Basic-Set-Equipment",
+      "label": "GURPS Basic Set Weapons",
+      "path": "./packs/Basic-Set-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Dungeon-Fantasy-1-Equipment",
+      "label": "GURPS Dungeon Fantasy 1",
+      "path": "./packs/Dungeon-Fantasy-1-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Dungeon-Fantasy-8-Equipment",
+      "label": "GURPS Dungeon Fantasy 8",
+      "path": "./packs/Dungeon-Fantasy-8-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Dungeon-Fantasy-RPG-Equipment",
+      "label": "GURPS Dungeon Fantasy",
+      "path": "./packs/Dungeon-Fantasy-RPG-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "High-Tech-Equipment",
+      "label": "GURPS High-Tech",
+      "path": "./packs/High-Tech-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Low-Tech-Equipment",
+      "label": "GURPS Low-Tech",
+      "path": "./packs/Low-Tech-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Magic-Equipment",
+      "label": "GURPS Magic",
+      "path": "./packs/Magic-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Martial-Arts-Equipment",
+      "label": "GURPS Martial Arts",
+      "path": "./packs/Martial-Arts-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Mysteries-Equipment",
+      "label": "GURPS Mysteries",
+      "path": "./packs/Mysteries-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Tactical-Shooting-Equipment",
+      "label": "GURPS Tactical Shooting",
+      "path": "./packs/Tactical-Shooting-Equipment.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Ultra-Tech-Equipment",
+      "label": "GURPS Ultra-Tech",
+      "path": "./packs/Ultra-Tech-Equipment.db",
+      "entity": "Item"
+    },
+  ]
 }
