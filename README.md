@@ -6,6 +6,9 @@ Works with **GGA** System! It provides a full list of skill defaults and some it
 
 * Boifubá
 * Pimpão
+* danielrab
+
+Thanks especially to [neck](https://github.com/rinickolous) and his magic code that made it possible to import all items into the foundry :)
 
 
 <table>
