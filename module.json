@@ -73,7 +73,7 @@
         {
             "name": "Martial-Arts-Equipment",
             "label": "GURPS Martial Arts",
-            "path": "./packs/Martia- Arts-Equipment.db",
+            "path": "./packs/Martial-Arts-Equipment.db",
             "entity": "Item"
         }
         {
@@ -83,7 +83,7 @@
             "entity": "Item"
         },
         {
-            "name": "Tactica- Shooting-Equipment",
+            "name": "Tactical-Shooting-Equipment",
             "label": "GURPS Tactical Shooting",
             "path": "./packs/Tactical-Shooting-Equipment.db",
             "entity": "Item"
