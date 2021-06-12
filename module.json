@@ -93,6 +93,6 @@
             "label": "GURPS Ultra-Tech",
             "path": "./packs/Ultra-Tech-Equipment.db",
             "entity": "Item"
-        },
+        }
     ]
 }
