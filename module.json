@@ -75,7 +75,7 @@
             "label": "GURPS Martial Arts",
             "path": "./packs/Martial-Arts-Equipment.db",
             "entity": "Item"
-        }
+        },
         {
             "name": "Mysteries-Equipment",
             "label": "GURPS Mysteries",
