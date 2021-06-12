@@ -29,67 +29,67 @@
       "entity": "RollTable"
     },
     {
-      "name": "Basic-Set-Equipment",
+      "name": "GURPS4E-Basic-Set",
       "label": "GURPS Basic Set Weapons",
       "path": "./packs/Basic-Set-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Dungeon-Fantasy-1-Equipment",
+      "name": "GURPS4E-Dungeon-Fantasy-1",
       "label": "GURPS Dungeon Fantasy 1",
       "path": "./packs/Dungeon-Fantasy-1-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Dungeon-Fantasy-8-Equipment",
+      "name": "GURPS4E-Dungeon-Fantasy-8",
       "label": "GURPS Dungeon Fantasy 8",
       "path": "./packs/Dungeon-Fantasy-8-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Dungeon-Fantasy-RPG-Equipment",
+      "name": "GURPS4E-Dungeon-Fantasy-RPG",
       "label": "GURPS Dungeon Fantasy",
       "path": "./packs/Dungeon-Fantasy-RPG-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "High-Tech-Equipment",
+      "name": "GURPS4E-High-Tech",
       "label": "GURPS High-Tech",
       "path": "./packs/High-Tech-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Low-Tech-Equipment",
+      "name": "GURPS4E-Low-Tech",
       "label": "GURPS Low-Tech",
       "path": "./packs/Low-Tech-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Magic-Equipment",
+      "name": "GURPS4E-Magic",
       "label": "GURPS Magic",
       "path": "./packs/Magic-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Martial-Arts-Equipment",
+      "name": "GURPS4E-Martial-Arts",
       "label": "GURPS Martial Arts",
       "path": "./packs/Martial-Arts-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Mysteries-Equipment",
+      "name": "GURPS4E-Mysteries",
       "label": "GURPS Mysteries",
       "path": "./packs/Mysteries-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Tactical-Shooting-Equipment",
+      "name": "GURPS4E-Tactical-Shooting",
       "label": "GURPS Tactical Shooting",
       "path": "./packs/Tactical-Shooting-Equipment.db",
       "entity": "Item"
     },
     {
-      "name": "Ultra-Tech-Equipment",
+      "name": "GURPS4E-Ultra-Tech",
       "label": "GURPS Ultra-Tech",
       "path": "./packs/Ultra-Tech-Equipment.db",
       "entity": "Item"
