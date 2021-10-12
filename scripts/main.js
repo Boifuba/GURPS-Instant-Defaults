@@ -1,12 +1,23 @@
 import GurpsWiring from '/systems/gurps/module/gurps-wiring.js'
-import {parselink} from '/systems/gurps/lib/parselink.js'
 
-function parseOtF(otf) {
-    return parselink(otf.trim().match(/\[(.+)\]/)[1]).text
-}
 function hookUp(html) {
     GurpsWiring.hookupGurps(html);
     GurpsWiring.hookupGurpsRightClick(html);
+    const links = html.find('.gurpslink');
+    links.each((_, li) => {
+        li.setAttribute('draggable', 'true')
+        li.addEventListener('dragstart', ev => {
+          let display = ''
+          if (!!ev.currentTarget?.dataset.action) display = ev.currentTarget.innerText
+          return ev.dataTransfer?.setData(
+            'text/plain',
+            JSON.stringify({
+              otf: li.getAttribute('data-otf'),
+              displayname: display,
+            }),
+          )
+        })
+    })
 }
 
 async function skillChooser() {
@@ -20,8 +31,8 @@ async function skillChooser() {
 
     function getFilteredOtfs(key) {
         return rowsProcessed.filter(r => r.name.includes(key)).map(r => `<p>
-            ${parseOtF(r.reference)}
-            ${parseOtF(r.otf)}
+            ${GURPS.gurpslink(r.reference)}
+            ${GURPS.gurpslink(r.otf)}
         </p>`).join('\n');
     }
 
