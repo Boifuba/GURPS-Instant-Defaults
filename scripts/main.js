@@ -1,4 +1,5 @@
-import GurpsWiring from '/systems/gurps/module/gurps-wiring.js'
+import GurpsWiring from '/systems/gurps/module/gurps-wiring.js';
+import { UniversalFileHandler } from '/systems/gurps/module/file-handlers/universal-file-handler.js';
 
 function hookUp(html) {
     GurpsWiring.hookupGurps(html);
@@ -20,6 +21,38 @@ function hookUp(html) {
     })
 }
 
+function getFilteredOtfs(key) {
+    return rowsProcessed.filter(r => r.name.includes(key)).map(r => `<p>
+        ${GURPS.gurpslink(r.reference)}
+        ${GURPS.gurpslink(r.otf)}
+    </p>`).join('\n');
+}
+
+async function skillsImport() {
+    const template = await getTemplate('modules/gurps-instant-defaults/templates/chooseSkillsFile.hbs');
+    const file = await UniversalFileHandler.getFile({template, extensions: ['.skl']});
+    const text = await file.text();
+    const skills = [];
+    const skillNames = new Set();
+    JSON.parse(text).rows.forEach(skill => {
+        if (!skillNames.has(skill.name)) {
+            skills.push(skill);
+            skillNames.add(skill.name);
+        }
+    });
+    const htmls = skills.map(skill => {
+        const defaults = skill.defaults ?? []
+        const options = [`S:${skill.name}`].concat(...defaults.map(d => d.type === 'skill'? `S:${d.name}${d.modifier}`: `${d.type}${d.modifier}`))
+        const otf = `["${skill.name}" ${options.join(' | ')}]`
+        const reference = skill.reference.split(',').map(r => `[PDF:${r}]`).join();
+        return `<tr><td>${otf}</td><td>${reference}</td></tr>`
+    });
+    JournalEntry.create({
+        name: file.name.slice(0, file.name.lastIndexOf('.')),
+        content: `<table>${htmls.join('\n')}</table>`,
+    })
+}
+
 async function skillChooser() {
     const compendium = game.packs.get("gurps-instant-defaults.Defaults");
     const journal = (await compendium.getDocuments())[0];
@@ -28,13 +61,6 @@ async function skillChooser() {
 
     const rowsProcessed = otfRows.map(r => ({otf: r.children[0].innerText, reference: r.children[1].innerText}));
     rowsProcessed.forEach(r => r.name = r.otf.trim().match(/^\["(?<name>[^"]+)"/).groups.name.toLowerCase());
-
-    function getFilteredOtfs(key) {
-        return rowsProcessed.filter(r => r.name.includes(key)).map(r => `<p>
-            ${GURPS.gurpslink(r.reference)}
-            ${GURPS.gurpslink(r.otf)}
-        </p>`).join('\n');
-    }
 
     const dialogHtml = await new Promise(resolve => {
         new Dialog({
@@ -55,4 +81,4 @@ async function skillChooser() {
     });
 }
 
-window.InstantDefaults = {skillChooser}
+window.InstantDefaults = {skillChooser, skillsImport}
