@@ -21,7 +21,7 @@ function hookUp(html) {
     })
 }
 
-function getFilteredOtfs(key) {
+function getFilteredOtfs(rowsProcessed, key) {
     return rowsProcessed.filter(r => r.name.includes(key)).map(r => `<p>
         ${GURPS.gurpslink(r.reference)}
         ${GURPS.gurpslink(r.otf)}
@@ -66,7 +66,7 @@ async function skillChooser() {
         new Dialog({
         title: 'Skill Chooser',
         content: `<input id="filter">
-    <div id="result">${getFilteredOtfs('')}</div>`,
+    <div id="result">${getFilteredOtfs(rowsProcessed, '')}</div>`,
         buttons: {},
         render: html => {
             hookUp(html);
@@ -76,7 +76,7 @@ async function skillChooser() {
     })
     const resultElement = dialogHtml.find('#result')[0]
     dialogHtml.find('#filter').on('input',function(e){
-        resultElement.innerHTML = getFilteredOtfs(e.target.value);
+        resultElement.innerHTML = getFilteredOtfs(rowsProcessed, e.target.value);
         hookUp($(resultElement));
     });
 }
