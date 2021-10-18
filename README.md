@@ -26,6 +26,15 @@ Thanks especially to [neck](https://github.com/rinickolous) and his magic code t
 ## Manifest:
 https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json
 
+# How to use
+
+1- Install de module as usual and activate it! 
+2- Create a new macro as Script (Type) and copy and paste this line:
+
+InstantDefaults.skillChooser()
+
+3- Use the field to search the desired default skill or click/drag at the OtF
+
 
 ## Special Thanks 
 To Chris and Nick for their efforts in making this possible and danielrab for his rocket science skills
