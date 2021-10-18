@@ -28,12 +28,25 @@ https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.j
 
 # How to use
 
-1- Install de module as usual and activate it! 
-2- Create a new macro as Script (Type) and copy and paste this line:
+1. Install de module as usual and activate it! 
+2. Create a new macro as Script (Type) and copy and paste this line:
 
-InstantDefaults.skillChooser()
+> InstantDefaults.skillChooser()
 
-3- Use the field to search the desired default skill or click/drag at the OtF
+3. Give to your macro a cool name and save it.
+
+3. Use the field to search the desired default skill or click/drag at the OtF
+
+![image](https://user-images.githubusercontent.com/21176804/137811594-8839ead3-e5ac-4ec6-9ae2-910718aab1f1.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/21176804/137811668-ef07e3ad-7d47-46c1-8e19-51bfffcbd905.png)
+
+4. If everuthing is ok you'll see this window
+
+5. You can use the journal from compendium as well. 
 
 
 ## Special Thanks 
