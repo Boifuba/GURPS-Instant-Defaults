@@ -1,11 +1,10 @@
 {
   "name": "gurps-instant-defaults",
-  "title": "Gurps Instant Defaults",
-  "description": "All skills with Defaults for GURPS",
+  "title": "GURPS Instant Defaults",
+  "description": "A bunch of tools to you play GURPS on GGA",
   "author": "Boifuba, Pimpão & danielrab",
   "version": "0.2.4",
   "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "0.9.0",
   "url": "https://gitlab.com/boifuba/Gurps_Instant_Defaults/",
   "manifest": "https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.json",
   "download": "https://github.com/boifuba/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
