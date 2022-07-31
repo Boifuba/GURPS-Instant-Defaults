@@ -24,7 +24,7 @@ Thanks especially to [neck](https://github.com/rinickolous) and his magic code t
 
 
 ## Manifest:
-https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json
+https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.json
 
 # How to use
 
