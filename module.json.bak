@@ -1,0 +1,44 @@
+{
+  "name": "gurps-instant-defaults",
+  "title": "Gurps Instant Defaults",
+  "description": "All skills with Defaults for GURPS",
+  "author": "Boifuba, Pimpão & danielrab",
+  "version": "0.2.3",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.8.6",
+  "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
+  "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
+  "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
+  "esmodules": ["scripts/main.js"],
+  "packs": [
+    {
+      "name": "Defaults",
+      "label": "GURPS Basic Set Skills",
+      "path": "./packs/gurps-instant-defaults.db",
+      "entity": "JournalEntry"
+    },
+    {
+      "name": "GURPS4E-Macro",
+      "label": "GURPS Macros",
+      "path": "./packs/macros.db",
+      "entity": "Macro"
+    },
+    {
+      "name": "GURPS4E-B-RollTables",
+      "label": "GURPS RollTables",
+      "path": "./packs/gurps-4e-rolltables.db",
+      "entity": "RollTable"
+    },
+    
+   
+    
+   
+    
+    
+    
+    
+    
+    
+    {
+  ]
+}
