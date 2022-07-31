@@ -6,9 +6,9 @@
   "version": "0.2.3",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.8.6",
-  "url": "https://gitlab.com/cefasheli/Gurps_Instant_Defaults/",
-  "manifest": "https://raw.githubusercontent.com/cefasheli/Gurps-Instant-Defaults/main/module.json",
-  "download": "https://github.com/cefasheli/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
+  "url": "https://gitlab.com/boifuba/Gurps_Instant_Defaults/",
+  "manifest": "https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.json",
+  "download": "https://github.com/boifuba/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
   "esmodules": ["scripts/main.js"],
   "packs": [
     {
@@ -28,17 +28,8 @@
       "label": "GURPS RollTables",
       "path": "./packs/gurps-4e-rolltables.db",
       "entity": "RollTable"
-    },
-    
-   
-    
-   
-    
-    
-    
-    
-    
-    
-    {
+    }
   ]
+    
+  
 }
