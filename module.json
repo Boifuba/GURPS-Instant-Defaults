@@ -28,7 +28,7 @@
       "label": "GURPS RollTables",
       "path": "./packs/gurps-4e-rolltables.db",
       "entity": "RollTable"
-    },
+    }
     
    
     
@@ -39,6 +39,6 @@
     
     
     
-    {
+    
   ]
 }
