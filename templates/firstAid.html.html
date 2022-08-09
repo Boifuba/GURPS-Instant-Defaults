@@ -220,16 +220,24 @@
 
         //  var arred = r2.toFixed(1)
 
-
+        if((isNaN(damageFinal))){
         res.innerHTML = `<b>You fall at ${speedGfinal}Km/h and take ${damageFinal} thr Damage<b>`
+        } else {
+            res.innerHTML = `<b>You fall at ${speedGfinal}Km/h and take ${damageFinal}d thr Damage<b>`
 
+        }
         return damageFinal
     }
 
     calcular()
 
     function showDamage() {
+        if (calcular() >= 1){
         GURPS.executeOTF(`/r [${calcular()}d cr] `)
+    } else {
+       GURPS.executeOTF(`/r [${calcular()} cr] `)
+    }
+
     }
 
 
