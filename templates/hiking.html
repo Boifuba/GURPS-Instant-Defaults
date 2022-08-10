@@ -49,7 +49,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: normal;
-        margin: 0;
+        margin: 0px;
         min-height: 40px;
         height: 40px;
         min-width: 0;
@@ -227,8 +227,7 @@
 <script>
 
 
-
-    let mostra = window.document.getElementById('mostra')
+var mostra = window.document.getElementById('mostra')
 
 function hiking() {
     GURPS.executeOTF('/roll ["Hiking" /r [S:Hiking | HT-5]]')
@@ -268,7 +267,7 @@ function hiking() {
         let token = canvas.tokens.controlled[0]
         let nome = token.id
         let data = GURPS.lastTargetedRolls[nome]
-        let margem = data.margin
+        let margem = nome.margin
         console.log(margem)
 
         if(margem < 0){
