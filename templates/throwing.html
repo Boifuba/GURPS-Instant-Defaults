@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let token = canvas.tokens.controlled[0]
+        let stValue = token.actor.data.data.attributes.ST.value
+        consol.log(typeof stValue)
+        let basicLift = token.actor.data.data.liftingmoving.basiclift
+
+        function apenasNumeros(basicLift) {
+            let numsStr = basicLift.replace(/[^0-9]/g, '');
+            return parseInt(numsStr);
+        }
+        let lift = apenasNumeros(basicLift)
+
+
+
+
+        const data = [
+            {0.05 : 3.5},
+            {0.10 : 2.5},
+            {0.15 : 2.0},
+            {0.20 : 1.5},
+            {0.25 : 1.2},
+            {0.30 : 1.1},
+            {0.40 : 1.0},
+            {0.50 : 0.8},
+            {0.75 : 0.7},
+            {1.00 : 0.6},
+            {1.50 : 0.4},
+             {2.0 : 0.30},
+             {2.5 : 0.25},
+             {3.0 : 0.20},
+             {4.0 : 0.15},
+             {5.0 : 0.12},
+             {6.0 : 0.10},
+             {7.0 : 0.09},
+             {8.0 : 0.08},
+             {9.0 : 0.07},
+            {10.0 : 0.06},
+            {12.0 : 0.05},
+    ]
+
+
+        const getAge = (data, target) => 
+  data.reduce((acc, obj) =>
+     Math.abs(target - obj.age) < Math.abs(target - acc.age) ? obj : acc
+  );
+  
+console.log(getAge(data, 4)); // {age: 60}
+
+
+
+
+
+
+
+
+
+        let st2 = 12
+        let objectWeight = 2
+        let lb = objectWeight*2.2046
+        let carga = 29
+        let ratio = carga /lb
+        console.log(ratio) 
+
+
+  goal = 5;
+
+  const getAge = (tabela, target) => 
+  tabela.reduce((acc, obj) =>
+     Math.abs(target - obj.age) < Math.abs(target - acc.age) ? obj : acc
+  );
+console.log(getAge(tabela, 2.1))
+
+console.log(closest);
+
+getAge(data, 61g
+
+
+        console.log(tabela)
+    </script>
+</body>
+
+</html>
+
