@@ -3,7 +3,7 @@
   "title": "GURPS Instant Defaults",
   "description": "A bunch of tools to you play GURPS on GGA",
   "author": "Boifubá",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "minimumCoreVersion": "0.7.9",
   "url": "https://gitlab.com/boifuba/Gurps_Instant_Defaults/",
   "manifest": "https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.json",
