@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.jso
 
 ![image](https://user-images.githubusercontent.com/21176804/137811668-ef07e3ad-7d47-46c1-8e19-51bfffcbd905.png)
 
-4. If everuthing is ok you'll see this window
+4. If everything is ok you'll see this window
 
 5. You can use the journal from compendium as well. 
 
@@ -41,7 +41,7 @@ https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.jso
 
 [GURPS Calculator](https://github.com/Boifuba/GURPS-Calculator "tic tic tic")
 
-[GURPS Tables](https://www.google.com "if you are Steve Jackson don't click here.")
+[GURPS Tables](https://github.com/Boifuba/GURPS-Tables "if you are Steve Jackson don't click here.")
 
 [GURPS Macro Toolbox](https://github.com/Boifuba/GURPS-Macro-Toolbox "It's a mess!")
 
