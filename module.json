@@ -2,7 +2,13 @@
   "name": "gurps-instant-defaults",
   "title": "GURPS Instant Defaults",
   "description": "A bunch of tools to you play GURPS on GGA",
-  "author": "Boifubá",
+  "authors": [
+    {
+      "name": "Boifubá",
+      "url": "https://github.com/Boifuba",
+      "discord": "Boifubá#6083"
+  
+    }],
   "version": "0.3.6",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "10",
