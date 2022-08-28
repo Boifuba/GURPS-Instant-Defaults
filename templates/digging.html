@@ -1,0 +1,80 @@
+
+<style>
+    div#fundo {
+        width: 100%;
+        height: 300px;
+    }
+  body {
+  background:#39393a;
+  font-family:"Raleway",sans-serif;
+}
+.range-input {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:#eee;
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  border-radius:10px;
+}
+.range-input input {
+  -webkit-appearance:none;
+  width:200px;
+  height:2px;
+  background:#474747;
+  border:none;
+  outline:none;
+}
+.range-input input::-webkit-slider-thumb {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  background:#eee;
+  border:2px solid #575757;
+  border-radius:50%;
+}
+.range-input input::-webkit-slider-thumb:hover {
+  background:#3b3b3b;
+}
+.range-input .value {
+  color:#4d4d4d;
+  text-align:center;
+  font-weight:600;
+  line-height:40px;
+  height:40px;
+  overflow:hidden;
+  margin-left:10px;
+}
+.range-input .value div {
+  transition:all 300ms ease-in-out;
+}
+</style>
+<body>
+ <div id="fundo">
+    <div class="range-input">
+        <input type="range" min="0" max="10" value="0" step="1">
+        <div class="value">
+          <div></div>
+        </div>
+      </div>
+</div>
+  <script>
+    let rangeInput = document.querySelector(".range-input input");
+let rangeValue = document.querySelector(".range-input .value div");
+
+let start = parseFloat(rangeInput.min);
+let end = parseFloat(rangeInput.max);
+let step = parseFloat(rangeInput.step);
+
+for(let i=start;i<=end;i+=step){
+  rangeValue.innerHTML += '<div>'+i+'</div>';
+}
+
+rangeInput.addEventListener("input",function(){
+  let top = parseFloat(rangeInput.value)/step * -40;
+  rangeValue.style.marginTop = top+"px";
+});
+  </script>
+</body>
