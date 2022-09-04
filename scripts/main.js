@@ -82,3 +82,6 @@ async function skillChooser() {
 }
 
 window.InstantDefaults = {skillChooser, skillsImport}
+
+
+
