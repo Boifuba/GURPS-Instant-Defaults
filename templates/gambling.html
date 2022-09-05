@@ -23,7 +23,6 @@
     }
 
     .buttonn {
-        width: 60px;
         height: 26px;
         cursor: pointer;
         padding-bottom: 10px;
@@ -43,7 +42,7 @@
 
     <form>
         <div class="form-group">
-            <label style="margin-left:5px; font-weight: 500;"> Pool:</label>
+            <label style="margin-left:3px; font-weight: 500;"> Pool:</label>
             <input id="bet" type="number" name="bet" min="1" placeholder="How much money?"
                 style="background-color:#7e7b7b5b;">
         </div>
@@ -52,22 +51,42 @@
     <br>
     <hr style="margin-top:-5px ;">
     <div style="display: flex;">
-        <div style="display: inline-block; margin-right: 5px; width: 210px;">
+        <div style="display: inline-block; margin-right: 3px; width: 130px;">
             <div id="titulo">Player </div>
             <input id="name1" type="text" name="name1" style="margin-top: 3px;">
             <input id="name2" type="text" name="name2" style="margin-top: 3px;">
             <input id="name3" type="text" name="name3" style="margin-top: 3px;">
             <input id="name4" type="text" name="name4" style="margin-top: 3px;">
         </div>
-        <div style="display: inline-block; margin-right: 5px;width: 50px;">
-            <div id="titulo">Skill </div>
-            <input id="skill1" type="number" name="skill1" placeholder="0" style="margin-top: 3px;">
-            <input id="skill2" type="number" name="skill2" placeholder="0" style="margin-top: 3px;">
-            <input id="skill3" type="number" name="skill3" placeholder="0" style="margin-top: 3px;">
-            <input id="skill4" type="number" name="skill4" placeholder="0" style="margin-top: 3px;">
+        
+            <div style="display: inline-block; margin-right: 3px; width: 100px;">
+                <div id="titulo">Skill </div>
+                <select id="phisiology" name="skill1"style="margin-top: 3px; height:26px">
+                    <option value="/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]">Gambling</option>
+                    <option value="/r [S:Hobby*Skill | DX-4 | IQ-4]">Hobby Skill</option>
+                </select>
+                <select id="phisiology" name="skill2"style="margin-top: 3px;height:26px">
+                    <option value="/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]">Gambling</option>
+                    <option value="/r [S:Hobby*Skill | DX-4 | IQ-4]">Hobby Skill</option>
+                </select>
+                <select id="phisiology" name="skill3"style="margin-top: 3px;height:26px">
+                    <option value="/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]">Gambling</option>
+                    <option value="/r [S:Hobby*Skill | DX-4 | IQ-4]">Hobby Skill</option>
+                </select>
+                <select id="phisiology" name="skill4" style="margin-top: 3px; height:26px">
+                    <option value="/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]">Gambling</option>
+                    <option value="/r [S:Hobby*Skill | DX-4 | IQ-4]">Hobby Skill</option>
+                </select>
+            </div>
+        <div style="display: inline-block;width: 40px; ">
+            <div id="titulo">NH </div>
+            <input id="skill1" type="number" name="nh1" placeholder="0" style="margin-top: 3px;">
+            <input id="skill2" type="number" name="nh2" placeholder="0" style="margin-top: 3px;">
+            <input id="skill3" type="number" name="nh3" placeholder="0" style="margin-top: 3px;">
+            <input id="skill4" type="number" name="nh4" placeholder="0" style="margin-top: 3px;">
 
         </div>
-        <div style="display: inline-block;margin-right: 5px; width: 50px;">
+        <div style="display: inline-block;margin-right: 3px; width: 40px;">
             <div id="titulo"> Margin</div>
             <input id="margin1" type="number" name="margin1" placeholder="0" style="margin-top: 3px;">
             <input id="margin2" type="number" name="margin2" placeholder="0" style="margin-top: 3px;">
@@ -76,7 +95,7 @@
 
         </div>
 
-        <div style="display: inline-block;width: 50px; padding-top:31px">
+        <div style="display: inline-block;width: 60px; padding-top:31px">
 
             <button class="buttonn" role="button" value="Calcular" onclick="gambling1()">Bet</button>
             <button class="buttonn" role="button" value="Calcular" onclick="gambling2()"style="margin-top: 4px;">Bet</button>
@@ -93,9 +112,9 @@
     async function gambling1() {
         let tokenD = canvas.tokens.controlled[0]
         document.getElementsByName("name1")[0].value = tokenD.name
-        await GURPS.executeOTF(`/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]`)
+        await GURPS.executeOTF(` ${document.getElementsByName("skill1")[0].value}`)
         let data = GURPS.lastTargetedRolls[tokenD.id]
-        document.getElementsByName("skill1")[0].value = data.finaltarget
+        document.getElementsByName("nh1")[0].value = data.finaltarget
         document.getElementsByName("margin1")[0].value = data.margin
 
 
@@ -104,18 +123,18 @@
     async function gambling2() {
         let tokenD = canvas.tokens.controlled[0]
         document.getElementsByName("name2")[0].value = tokenD.name
-        await GURPS.executeOTF(`/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]`)
+        await GURPS.executeOTF(` ${document.getElementsByName("skill2")[0].value}`)
         let data = GURPS.lastTargetedRolls[tokenD.id]
-        document.getElementsByName("skill2")[0].value = data.finaltarget
+        document.getElementsByName("nh2")[0].value = data.finaltarget
         document.getElementsByName("margin2")[0].value = data.margin
 
     }
     async function gambling3() {
         let tokenD = canvas.tokens.controlled[0]
         document.getElementsByName("name3")[0].value = tokenD.name
-        await GURPS.executeOTF(`/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]`)
+        await GURPS.executeOTF(` ${document.getElementsByName("skill3")[0].value}`)
         let data = GURPS.lastTargetedRolls[tokenD.id]
-        document.getElementsByName("skill3")[0].value = data.finaltarget
+        document.getElementsByName("nh3")[0].value = data.finaltarget
         document.getElementsByName("margin3")[0].value = data.margin
 
 
@@ -124,9 +143,9 @@
     async function gambling4() {
         let tokenD = canvas.tokens.controlled[0]
         document.getElementsByName("name4")[0].value = tokenD.name
-        await GURPS.executeOTF(`/r [S:Gambling | IQ-5 | S:Mathematics*Statistics-5]`)
+        await GURPS.executeOTF(` ${document.getElementsByName("skill4")[0].value}`)
         let data = GURPS.lastTargetedRolls[tokenD.id]
-        document.getElementsByName("skill4")[0].value = data.finaltarget
+        document.getElementsByName("nh4")[0].value = data.finaltarget
         document.getElementsByName("margin4")[0].value = data.margin
 
 
@@ -180,6 +199,7 @@ console.log(divisor)
         if (dinheiroFinal4 < 0 && divisor == 4) ChatMessage.create({ content: `<h1 style="background-color: red; color: #fff;">${name4}</h1> Lost ${dinheiroFinal4.toFixed(2)} $` })
         if (dinheiroFinal4 === undefined) console.log('deu nada')
     }
+  
 
 </script>
 
