@@ -251,7 +251,7 @@ if (margin4 != '') { divisor = 4 }
       //jogador 1
       let marginTotal = (margin1 + margin2 + margin3 + margin4) / divisor
       let marginJogador1 = (margin1 - marginTotal)
-      let dinheiroFinal1 = (marginJogador1 * 0.01) * bet;
+      let dinheiroFinal1 = (marginJogador1 * 0.1) * bet;
       if (dinheiroFinal1 > 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: green;">${(jog1.value)} Won ${doleta.format(dinheiroFinal1)} </div>` })
       if (dinheiroFinal1 < 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: red;">${(jog1.value)} Lose ${doleta.format(dinheiroFinal1)} </div>` })
       if (!!dinheiroFinal1) console.log('deu nada')    
@@ -262,7 +262,7 @@ if (margin4 != '') { divisor = 4 }
       document.getElementById(`money1`).value = doleta.format(total1)
 
       let marginJogador2 = (margin2 - marginTotal)
-      let dinheiroFinal2 = (marginJogador2 * 10/100) * bet;
+      let dinheiroFinal2 = (marginJogador2 * 0.1) * bet;
       if (dinheiroFinal2 > 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: green;">${(jog2.value)} Won ${doleta.format(dinheiroFinal2)} </div>` })
       if (dinheiroFinal2 < 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: red;">${(jog2.value)} Lose ${doleta.format(dinheiroFinal2)} </div>` })
 
@@ -274,7 +274,7 @@ if (margin4 != '') { divisor = 4 }
       document.getElementById(`money2`).value = doleta.format(total2)
 
       let marginJogador3 = (margin3 - marginTotal)
-      let dinheiroFinal3 = (marginJogador3 * 10/100) * bet;
+      let dinheiroFinal3 = (marginJogador3 * 0.1) * bet;
       if (dinheiroFinal3 > 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: green;">${(jog3.value)} Won ${doleta.format(dinheiroFinal3)} </div>` })
       if (dinheiroFinal3 < 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: red;">${(jog3.value)} Lose ${doleta.format(dinheiroFinal3)} </div>` })
 
@@ -285,7 +285,7 @@ if (margin4 != '') { divisor = 4 }
       document.getElementById(`money3`).value = doleta.format(total3)
 
       let marginJogador4 = (margin4 - marginTotal)
-      let dinheiroFinal4 = (marginJogador4 * 10/100) * bet;
+      let dinheiroFinal4 = (marginJogador4 * 0.1) * bet;
       if (dinheiroFinal4 > 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: green;">${(jog4.value)} Won ${doleta.format(dinheiroFinal4)} </div>` })
       if (dinheiroFinal4 < 0) ChatMessage.create({ content: `<div style="font-weight: 500; color: beige; background-color: red;">${(jog4.value)} Lose ${doleta.format(dinheiroFinal4)} </div>` })
 
