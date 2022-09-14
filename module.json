@@ -1,5 +1,5 @@
 {
-  "name": "gurps-instant-defaults",
+  "id": "gurps-instant-defaults",
   "title": "GURPS Instant Defaults",
   "description": "A bunch of tools to you play GURPS on GGA",
   "authors": [
@@ -7,43 +7,42 @@
       "name": "Boifubá",
       "url": "https://github.com/Boifuba",
       "discord": "Boifubá#6083"
-  
-    }],
+    }
+  ],
   "version": "0.3.10",
-  "minimumCoreVersion": "0.8.5",
-  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": 10,
+    "verified": "10.285",
+    "maximum": 10
+  },
   "url": "https://gitlab.com/boifuba/Gurps_Instant_Defaults/",
   "manifest": "https://raw.githubusercontent.com/boifuba/Gurps-Instant-Defaults/main/module.json",
   "download": "https://github.com/boifuba/Gurps-Instant-Defaults/archive/refs/heads/main.zip",
   "esmodules": ["scripts/main.js"],
-  "styles": [
-    "styles/simple.css"
-      ],
-      "flags": {
-        "fvttdevleague": {
-            "package-jam": 2022
-        }
-    },
+  "styles": ["styles/simple.css"],
+  "flags": {
+    "fvttdevleague": {
+      "package-jam": 2022
+    }
+  },
   "packs": [
     {
       "name": "Defaults",
       "label": "GURPS Basic Set Skills",
       "path": "./packs/gurps-instant-defaults.db",
-      "entity": "JournalEntry"
+      "type": "JournalEntry"
     },
     {
       "name": "GURPS4E-Macro",
       "label": "GURPS Macros",
       "path": "./packs/macros.db",
-      "entity": "Macro"
+      "type": "Macro"
     },
     {
       "name": "GURPS4E-B-RollTables",
       "label": "GURPS RollTables",
       "path": "./packs/gurps-4e-rolltables.db",
-      "entity": "RollTable"
+      "type": "RollTable"
     }
   ]
-    
-  
 }

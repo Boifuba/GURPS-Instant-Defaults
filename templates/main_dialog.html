@@ -1,101 +1,126 @@
-<style>   
-.titulo {
-  background-color: black;
-  height: 26px;
-  color: beige;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 5px;
-}
-.boxcheck {
-  text-align: center;
-  justify-content: center;
-  margin-left: 5px;
-  font-size: 15px;
-  padding: 10px;
-}
-.boxcheckpai {
-  background-color: rgba(107, 107, 107, 0.166);
-  height: auto;
-  margin-bottom: 10px;
-  
-}
-.containerform {
-  display: flex;
-}
-.containerduo {
-  height: 50%;
-  display: inline-block;
-}
-</style>  
-
-
+<style>
+  .titulo {
+    background-color: black;
+    height: 26px;
+    color: beige;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .boxcheck {
+    text-align: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .boxcheckpai {
+    background-color: rgba(107, 107, 107, 0.166);
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .containerform {
+    display: flex;
+  }
+  .containerduo {
+    height: 50%;
+    display: inline-block;
+  }
+</style>
 
 <div class="divTableRow">
-<div class="divTableCell">
+  <div class="divTableCell">
     <p class="titulo">Message</p>
     <div class="boxcheckpai">
-    <div class="boxcheck">
-      <input type="radio" id="position_message" name="extra_position" value="message" checked style="cursor: pointer;"> 	&nbsp;  
-      <label for="position_message" style="cursor: pointer;"> Message </label>
+      <div class="boxcheck">
+        <input
+          type="radio"
+          id="position_message"
+          name="extra_position"
+          value="message"
+          checked
+          style="cursor: pointer"
+        />
+        &nbsp;
+        <label for="position_message" style="cursor: pointer"> Message </label>
 
-      <input type="radio" id="position_yes" name="extra_position" value="position_yes" style="cursor: pointer;">  	&nbsp; 
-      <label for="position_yes" style="cursor: pointer;"> Yes </label>
+        <input
+          type="radio"
+          id="position_yes"
+          name="extra_position"
+          value="position_yes"
+          style="cursor: pointer"
+        />
+        &nbsp;
+        <label for="position_yes" style="cursor: pointer"> Yes </label>
 
-      <input type="radio" id="position_no" name="extra_position" value="position_no" style="cursor: pointer;">  	&nbsp; 
-      <label for="position_no" style="cursor: pointer;"> No </label>
-
+        <input
+          type="radio"
+          id="position_no"
+          name="extra_position"
+          value="position_no"
+          style="cursor: pointer"
+        />
+        &nbsp;
+        <label for="position_no" style="cursor: pointer"> No </label>
+      </div>
     </div>
-
-
-</div>
-<textarea name="text" id="message" cols="20" rows="6" placeholder="Insert your text here. ex: wasp "></textarea>
-
-</div>
-
+    <textarea
+      name="text"
+      id="message"
+      cols="20"
+      rows="6"
+      placeholder="Insert your text here. ex: wasp "
+    ></textarea>
+  </div>
 
   <p class="titulo">Position:</p>
   <div class="boxcheckpai">
-
-
-
-<form>
-  <div class="form-group">
-      <label style="text-align:left;">Custom Position: </label>
-      <select id="" name="" style="cursor: pointer;">
-        <option value="rola">Choose </option>
-         <option value="">Position 1</option>
+    <form>
+      <div class="form-group">
+        <label style="text-align: left">Custom Position: </label>
+        <select id="" name="" style="cursor: pointer">
+          <option value="rola">Choose</option>
+          <option value="">Position 1</option>
           <option value="">Position 2</option>
           <option value="">Position 3</option>
           <option value="">Position 4</option>
           <option value="">Position 5</option>
           <option value="">Position 6</option>
+        </select>
+      </div>
+    </form>
 
-      </select>
+    <p class="titulo">Others:</p>
+    <form>
+      <div class="form-group">
+        <label style="text-align: left">Move Type: </label>
+        <select id="movetype" name="movetype" style="cursor: pointer">
+          <option value="rola">Choose</option>
+          <option value="moveType1">Type 1</option>
+          <option value="moveType2">Type 2 - No Sound</option>
+          <option value="moveType3">Type 3 - Animation</option>
+          <option value="moveType4">Type 4 - End</option>
+          \
+        </select>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label>Delay::</label>
+        <input
+          id="input"
+          type="number"
+          name="input"
+          style="cursor: auto"
+          value="1"
+          placeholder="miliseconds"
+          required
+        />
+      </div>
+      &nbsp;
+      <br />
+    </form>
   </div>
-</form>
- 
-        <p class="titulo">Others:</p>
-        <form>
-          <div class="form-group">
-              <label style="text-align:left;">Move Type: </label>
-              <select id="movetype" name="movetype"style="cursor: pointer;">
-                <option value="rola">Choose </option>
-                <option value="moveType1">Type 1</option>
-                <option value="moveType2">Type 2 - No Sound</option>
-                <option value="moveType3">Type 3 - Animation</option>
-                <option value="moveType4">Type 4 - End</option>
-        \     </select>
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-              <label>Delay::</label>
-              <input id="input" type="number" name="input" style="cursor: auto;" value = "1" placeholder="miliseconds"
-                  required>
-          </div>
-          &nbsp;
-          <br>
-      </form>
 </div>
