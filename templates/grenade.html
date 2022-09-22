@@ -1,0 +1,59 @@
+<body>
+  <form style="text-align: left">
+    <p id="coluna">
+      <input type="radio" name="OPCAO" value="0.2" /> Single Damage
+      <input type="radio" name="OPCAO" value="0.2" /> Area Damage
+    </p>
+  </form>
+  <div style="display: flex;">
+  <form>
+    <div style="display: inline-block;">
+      <label>Energy:</label>
+      <input id="input" type="number" name="input"/>
+    </div>
+  </form>
+
+  <form>
+    <div style="display: inline-block;">
+      <label> Turns</label>
+      <input id="input" type="number" name="input"/>
+
+      
+    </div>
+  </form>
+</div>
+</body>
+<script>
+  tokenD = canvas.tokens.controlled[0];
+  // if (!token) return;
+  let targets = Array.from(game.user.targets);
+  const gridSize = canvas.grid.size;
+  const startPoint = { x: tokenD.x, y: tokenD.y };
+  let messageData = "<h2>Grenade Distance</h2><br>";
+
+  //rola os dados
+  let rolls = [];
+  for (var a = 1; a <= 10; a++) {
+    rolls.push(Math.floor(Math.random() * (6 - 1 + 1) + 1));
+  }
+  //reduce
+
+  let total = rolls.reduce((pV, cV) => pV + cV, 0);
+
+  ChatMessage.create({ content: `You rolled (${rolls}) = ${total}` });
+
+  targets.forEach(async (target) => {
+    const distance = canvas.grid
+      .measureDistance(startPoint, target, { gridSpaces: true })
+      .toFixed(1);
+    let c = 0;
+    console.log(total, c);
+    while (c <= 6) {
+      let explosion = Math.floor(total / (c * 3)).toFixed();
+      if (distance == c)
+        messageData += `<b>${target.name}</b> Is <b>${c} yards </b>from grenade and took ["${explosion} burning damage" ${explosion} burn]  <br>`;
+      c++;
+    }
+  });
+  ChatMessage.create({ content: messageData });
+</script>
