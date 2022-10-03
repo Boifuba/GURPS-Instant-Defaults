@@ -30,7 +30,7 @@
   <div class="form-group">
     <label>Concussion dices:</label>
     <input
-      id="dices"
+      id="cdices"
       type="number"
       placeholder="Only numbers"
       required
@@ -74,10 +74,9 @@
 
 <script>
    let tokenD = canvas.tokens.controlled[0];
-  let targets = Array.from(game.user.targets);
+  const targets = Array.from(game.user.targets);
   const gridSize = canvas.grid.size;
-  const startPoint = { x: tokenD.x, y: tokenD.y };
-  let messageData = "<h2>Grenade Distance</h2><br>";
+  const startPoint = { x: tokenD.x + 0.5 * gridSize, y: tokenD.y + 0.5 * gridSize };
   let dices = $("#dices").val();
 
   /*
@@ -86,10 +85,9 @@
 
   */
     async function fragmentation(){
-      let fdices = $("#fdices").val();
+      let cdices = $("#fdices").val();
       let gskills = $("#gskill").val();
       let frolls = [];
-      let data = GURPS.lastTargetedRolls[tokenD.id];
 
       for (var a = 1; a <= fdices; a++) {
     frolls.push(Math.floor(Math.random() * (6 - 1 + 1) + 1));
@@ -97,6 +95,8 @@
      let ftotal = frolls.reduce((pV, cV) => pV + cV, 0);
 
     await GURPS.executeOTF(`/ra ${gskills}`)
+    let data = GURPS.lastTargetedRolls[tokenD.id];
+
     let success = Math.floor(data.margin/3)      
 
    
@@ -107,31 +107,38 @@
 
 
   }
+/*
 
+        CONCUSSION
+
+  */
   function concussion() {
  
 
   let rolls = [];
-  for (var a = 1; a <= dices; a++) {
+  let cdices = $("#cdices").val();
+  let messageData = "<h2>Grenade Distance</h2><br>";
+
+  for (var a = 1; a <= cdices; a++) {
     rolls.push(Math.floor(Math.random() * (6 - 1 + 1) + 1));
   }
-
   let total = rolls.reduce((pV, cV) => pV + cV, 0);
 
   ChatMessage.create({ content: `You rolled (${rolls}) = ${total}` });
-
+  
   targets.forEach(async (target) => {
     const distance = canvas.grid
       .measureDistance(startPoint, target, { gridSpaces: true })
       .toFixed(1);
+
     let c = 0;
-    console.log(total, c);
     while (c <= 6) {
       let explosion = Math.floor(total / (c * 3)).toFixed();
       if (distance == c)
         messageData += `<b>${target.name}</b> Is <b>${c} yards </b>from grenade and took ["${explosion} burning damage" ${explosion} burn]  <br>`;
       c++;
-    }
+console.log(rolls)    
+}
   });
   ChatMessage.create({ content: messageData }); 
 
