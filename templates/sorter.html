@@ -22,12 +22,16 @@
     border-radius: 0.375rem;
     font-size: 18px;
     text-decoration: none;
+    
   }
+  .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.field {
+  display: inline-block;
+}
 
-  .style { 
-
-   
-  }
 </style>
 <html>
   <div class="callheader">Cyberpsychosis</div>
@@ -48,10 +52,64 @@
       </form>
     </div>
 
-    <div class="grid-item">
+    <div class="grid-it">
       <button role="button" onclick="leve()">Calculate</button>
     </div>
   </div>
+
+&nbsp;
+<fieldset>
+  <blockquote> <strong>IMPORTANT</strong> <br> This rule is not oficial! Was made by friends to cover cyberpsychosis described on Cyberpunk2077 </blockquote>
+        
+  <br>
+  1- Fill the field above with the number of implants in character points that the character has, treat negative values ​​as positive
+  <br>
+  2- The game will return as chat message some disadvantages based on the value inserted. 
+  <br>
+  3- Treat Mild disadvantages as Perks.
+  <br>
+  4- The quantity os implants is the check to resist the disadvantages and you have to fail to resist.
+  <br>
+
+</fieldset>
+<br>
+<!--
+<div class="boxes">
+
+      <form>
+        <div class="form-group">
+          <label style="text-align: center; margin-right: 10px;">Low:</label>
+          <input style="width: 80px;" placeholder="50" type="number" id="low" type="number" placeholder="25" required/>
+        </div>
+      </form>
+
+      <form>
+        <div class="form-group">
+          <label style="padding-left: 5px; margin-right: 10px; text-align: center;"> Medium:</label>
+          <input style="width: 80px;" placeholder="75" type="number" id="medium" type="number" placeholder="50 " required/>
+        </div>
+      </form>
+  
+      <form>
+        <div class="form-group">
+          <label style="padding-left: 5px; margin-right: 10px; text-align: center;"> High:</label>
+          <input style="width: 80px;" placeholder="" type="number"  id="high" type="number" placeholder="75" required/>
+        </div>
+      </form>
+
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
 </html>
 <script>
   function leve() {
