@@ -21,8 +21,8 @@
   <form>
     <div class="form-group">
       <label>Size</label>
-      <input id="sizes" type="number" name="sizes"  value="0.39" placeholder="0.39"
-        required
+      <input id="sizes" type="number" name="sizes" 
+        
       />
     </div>
   </form>
@@ -40,7 +40,13 @@
               <option value="Orange">Orange</option>
               <option value="Red">Red</option>
               <option value="White">White</option>
-              <option value="Green">Green</option>  
+              <option value="Green">Green</option>       
+              
+
+
+
+
+
 
 
              
@@ -54,18 +60,22 @@
 </html>
 
 <script>
-  function aplica() {
-    const cor = $("#cores").val();
- const size = $("#sizes").val();
+// let macro = game.macros.getName("Colored Borders")
+// value = $("#sizes").val();
+// let size = macro.getFlag("gurps-instant-defaults", "sizes", value)
 
- if (size === '') {size = 0.39 }
+// document.getElementsByName("sizes")[0].value = size
+
+function aplica() {
+const cor = $("#cores").val();
+const size = $("#sizes").val();
+
  
 let token = canvas.tokens.controlled[0]
   const effects = Sequencer.EffectManager.getEffects({
     name: "*bordinha*",
     object: token,
   });
-console.log(size, typeof(size))
   if (effects.length) {
     Sequencer.EffectManager.endEffects({ name: "*bordinha*", object: token });
   } else {
@@ -77,8 +87,11 @@ console.log(size, typeof(size))
       .atLocation(token)
       .persist()
       .name("bordinha")
-      .belowTokens()
+      .elevation(0)
       .play();
   }
+
+// await  macro.setFlag("gurps-instant-defaults", "sizes", value)
 }
+
 </script>
