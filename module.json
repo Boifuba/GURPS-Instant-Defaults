@@ -25,35 +25,37 @@
   "styles": [
     "styles/simple.css"
   ],
-  "flags": {
-    "fvttdevleague": {
-      "package-jam": 2022
-    }
-  },
+ 
   "packs": [
     {
       "name": "Defaults",
       "label": "GURPS Basic Set Skills",
       "path": "packs/gurps-instant-defaults.db",
       "type": "JournalEntry",
-      "private": false,
-      "flags": {}
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },      "flags": {}
     },
     {
       "name": "GURPS4E-Macro",
       "label": "GURPS Macros",
       "path": "packs/macros.db",
       "type": "Macro",
-      "private": false,
-      "flags": {}
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },      "flags": {}
     },
     {
       "name": "GURPS4E-B-RollTables",
       "label": "GURPS RollTables",
       "path": "packs/gurps-4e-rolltables.db",
       "type": "RollTable",
-      "private": false,
-      "flags": {}
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },      "flags": {}
     }
   ]
 }
