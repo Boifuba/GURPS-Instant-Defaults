@@ -42,10 +42,8 @@
       "label": "GURPS Macros",
       "path": "packs/macros.db",
       "type": "Macro",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },      "flags": {}
+      "module": "gurps-instant-defaults"
+
     },
     {
       "name": "GURPS4E-B-RollTables",
