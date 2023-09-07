@@ -146,8 +146,6 @@
           id="inputHP"
           type="number"
           name="inputHP"
-          min="1"
-          max="20"
           placeholder="Press calculate to get your HP"
           style="font-weight: bold"
         />
@@ -297,12 +295,11 @@
       "47",
     ];
     var actorId = canvas.tokens.controlled[0].actor;
-    var HP = actorId.system.HP.value;
+    var HP = window.document.getElementById("inputHP").value
     var input = window.document.getElementById("input").value;
     var inputGrav = window.document.getElementById("inputGRAV").value;
     var speedfinal = speed[input - 1];
 
-    document.getElementsByName("inputHP")[0].value = HP;
     let res = window.document.getElementById("res");
     //calcula a velocidade em qualquer g
     let speedG = Math.sqrt(21.4 * inputGrav * input);
@@ -323,15 +320,20 @@
       var damageFinal = Math.round(damage);
     }
 
-    //  let r2 = HP * ((Math.sqrt(21.4*input*inputGrav))/100)
-    console.log(damageFinal);
+    
 
-    //  var arred = r2.toFixed(1)
+    function kmPorHoraParaMetrosPorSegundo(kmPorHora) {
+  return (kmPorHora * 1000 / 3600).toFixed(0);
+}
+
+var velocidadeMetrosPorSegundo = kmPorHoraParaMetrosPorSegundo(speedGfinal);
+
+
 
     if (isNaN(damageFinal)) {
-      res.innerHTML = `<b>You fall at ${speedGfinal}Km/h and take ${damageFinal} thr Damage<b>`;
+      res.innerHTML = `<b>You fall at ${speedGfinal}Km/h or ${velocidadeMetrosPorSegundo} hex per turn and take ${damageFinal} thr Damage<b>`;
     } else {
-      res.innerHTML = `<b>You fall at ${speedGfinal}Km/h and take ${damageFinal}d thr Damage<b>`;
+      res.innerHTML = `<b>You fall at ${speedGfinal}Km/h or ${velocidadeMetrosPorSegundo} hex per turn  and take ${damageFinal}d thr Damage<b>`;
     }
     return damageFinal;
   }
